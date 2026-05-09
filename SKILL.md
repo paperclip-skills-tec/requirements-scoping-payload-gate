@@ -1,17 +1,6 @@
 ---
 name: requirements-scoping-payload-gate
-description: >
-  Requirements-phase gate that ensures scope documents and acceptance criteria for client
-  components consuming server endpoints include a payload verification plan before
-  implementation begins. Invoke when writing or reviewing acceptance criteria for any
-  feature that adds or modifies a client component that fetches from a server endpoint —
-  wizards, pickers, list-fetches, table fetches, form submissions — even when the shape
-  looks obvious. Also invoke when reviewing a scope doc, feature spec, or issue description
-  for completeness before handing off to a developer. Complements payload-shape-gate (the
-  implementation-phase counterpart) by shifting the check upstream to requirements, so
-  developers never start coding a fetch flow without a clear verification approach already
-  agreed upon. The shift-left motivation is TEC-1001 PR #16: column-alias mismatches
-  silently pass unit tests and are only caught late in QA or in production.
+description: "Requirements-phase gate that ensures scope documents and acceptance criteria for client components consuming server endpoints include a payload verification plan before implementation begins. Invoke when writing or reviewing acceptance criteria for any feature that adds or modifies a client component that fetches from a server endpoint — wizards, pickers, list-fetches, table fetches, form submissions — even when the shape looks obvious. Also invoke when reviewing a scope doc, feature spec, or issue description for completeness before handing off to a developer. Complements payload-shape-gate (the implementation-phase counterpart) by shifting the check upstream to requirements, so developers never start coding a fetch flow without a clear verification approach already agreed upon. The shift-left motivation is TEC-1001 PR #16: column-alias mismatches silently pass unit tests and are only caught late in QA or in production."
 ---
 
 # Requirements-Phase Payload Verification Gate
